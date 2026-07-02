@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE EDITOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="heroLeft">
+                <div class="heroLeftTop">
+                    <label for="input-img" class="btn" id="ChooseImg">
+                        Choose Image
+                        <input type="file" id="input-img" hidden>
+                    </label>
+                    <button class="btn" id="resetBtn">Reset</button>
+                    <button class="btn" id="downloadImgBtn">Download Image</button>
+                </div>
+                <div class="heroLeftBottom">
+                    <div class="placeholder">
+                        <i class="fa-regular fa-images" id="icon"></i>
+                        <p id="NoImgChooseText">No Image Choose</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="heroRight">
+                <div class="heroRightTop">
+                    <div id="headingFilter">
+                        <h2>Filters</h2>
+                    </div>
+                    
+                    <div id="filters">
+                        <p class="filterNameText">Brightness</p>
+                        <input type="range" id="Brightness" class="filter" value="100" min="0" max="200">
+                        <p class="filterNameText" >Contrast</p>
+                        <input type="range" id="Contrast" class="filter" value="100" min="0" max="200">
+                        <p class="filterNameText" >Exposure</p>
+                        <input type="range" id="Exposure" class="filter" value="100" min="0" max="200">
+                        <p class="filterNameText" >Saturation</p>
+                        <input type="range" id="Saturation" class="filter" value="100" min="0" max="200">
+                        <p class="filterNameText" >Hue Rotate</p>
+                        <input type="range" id="HueRotate" class="filter" value="0" min="0" max="200">
+                        <p class="filterNameText" >Blur</p>
+                        <input type="range" id="Blur" class="filter" value="0" min="0" max="200">
+                        <p class="filterNameText" >Grayscale</p>
+                        <input type="range" id="Grayscale" class="filter" value="0" min="0" max="200">
+                        <p class="filterNameText" >Sepia</p>
+                        <input type="range" id="Sepia" class="filter" value="0" min="0" max="200">
+                        <p class="filterNameText" >Opacity</p>
+                        <input type="range" id="Opacity" class="filter" value="200" min="0" max="200">
+                        <p class="filterNameText" >Invert</p>
+                        <input type="range" id="Invert" class="filter" value="0" min="0" max="200">
+                    </div>
+                </div>
+                <div class="heroRightBottom">
+                    <p id="presetsText">Presets</p>
+                    <button class="btn" id="Original">Original</button>
+                    <button class="btn" id="Drama">Drama</button>
+                    <button class="btn" id="Vintage">Vintage</button>
+                    <button class="btn" id="Oldschool">OldSchool</button>
+                    <button class="btn" id="Cyberpunk">Cyberpunk</button>
+                    <button class="btn" id="SoftGlow">Soft Glow</button>
+                    <button class="btn" id="Noir">Noir</button>
+                    <button class="btn" id="WarmSunset">Warm Sunset</button>
+                    <button class="btn" id="CoolTone">Cool Tone</button>
+                    <button class="btn" id="Faded">Faded</button>
+                    <button class="btn" id="retroPop">retro Pop</button>
+                    <button class="btn" id="BlackGold">Black Gold</button>
+                </div>
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
