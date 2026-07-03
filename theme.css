@@ -14,6 +14,12 @@
     --bg-color-canvas:#1E1E21;
     --color-panel:#161618;
 
+    --color-chip-bg: #242428;
+
+
+    --color-chip-bg-hover: #2E2E33;
+    --color-chip-border-hover: #4A4A52;
+
     /* btn */
     --color-Choose-img-btn: #22C55E;
     --color-Choose-img-btn-hover: #3ED374;
@@ -27,7 +33,7 @@
     --color-border-strong:#3A3A3F;
 
     --color-slider-thumb : #4C7EFF;
-    --color-slider-track: #9A9A9E ;
+    --color-slider-track: #2E2E32;
 
 
 
@@ -79,7 +85,7 @@
 
     /* Gutters */
     --gutter-xxxs: 0.125rem;   /* 2px */
-    --gutter-xxs: 0.25rem;   /* 4px */
+    --gutter-xxs: 0.45rem;  
     --gutter-xs: 0.5rem;   /* 8px */
     --gutter-sm: 1rem;     /* 16px */
     --gutter-md: 1.5rem;   /* 24px */

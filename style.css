@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 
@@ -25,7 +26,7 @@ body{
     height: 90vh;
     padding: var(--padding-xs);
     border: 2px solid var(--color-border);
-    background-color: aquamarine;
+
 
     border-radius:var(--border-radius-xl) ;
 
@@ -33,7 +34,7 @@ body{
 .heroLeft{
     width: 60%;
     height: 100%;
-    background-color: blueviolet;
+
 
 
 }
@@ -46,7 +47,7 @@ body{
     align-items: center;
     border: 2px solid var(--color-border);
     border-radius: var(--border-radius-lg);
-    background-color:chocolate;
+
 
 
 }
@@ -60,6 +61,7 @@ body{
     transition: transform 0.2s ease-in-out;
     color: var(--text-primary-color);
     cursor: pointer;
+    
 }
 
 .btn:hover {
@@ -113,6 +115,7 @@ body{
     background-color: var(--bg-color-canvas);
     border-radius: var(--border-radius-2xl);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    
 
     
 }
@@ -127,12 +130,12 @@ body{
 .heroRightTop{
     width: 100%;
     height: 70%;
-    background-color:darkolivegreen;
+
 }
 .heroRightBottom{
     width: 100%;
     height: 30%;
-    background-color:blue;
+
 }
 .placeholder{
     display: flex;
@@ -168,10 +171,10 @@ body{
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    gap: var(--gutter-xs);
+    gap: var(--gutter-xxs);
     padding: 0 var(--padding-lg);
 
-    background-color:chartreuse;
+
 }
 .filterNameText{
     color: var(--text-secondary-color);
@@ -182,6 +185,9 @@ body{
     cursor: pointer;
     appearance: none;
     border-radius: var(--border-radius-md);
+
+    background: transparent;
+    outline: none;
 
 }
 
@@ -195,6 +201,53 @@ body{
 }
 .filter::-webkit-slider-runnable-track {
     height: 3px;
+
     border-radius: var(--border-radius-7xl) ;
     background: var(--color-slider-track );
+}
+
+.filter::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-slider-thumb);
+    border: none;
+}
+.filter::-moz-range-track {
+    border-radius: var(--border-radius-7xl);
+    height: 3px;
+    background: var(--color-slider-track);
+}
+
+.heroRightBottom{
+    padding: 1rem;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--gutter-xs);
+
+
+}
+.presetsBtn{
+    color: var(--text-secondary-color);
+    background-color: var(--color-chip-bg);
+    border: 1px solid var(--color-border-strong);
+
+    border-radius: var(--border-radius-xl);
+}
+.presetsBtn:hover{
+    background-color: var(--color-chip-bg-hover);
+    border-color: var(--color-chip-border-hover);
+
+}
+
+.presetsBtn-active{
+    background-color: var(--color-Download-btn);
+    border-color: var(--color-Download-btn);
+    color: var(--text-primary-color);
+}
+.presetsBtn-active:hover{
+    background-color: var(--color-Download-btn-hover);
+    border-color: var(--color-Download-btn-hover);
 }
