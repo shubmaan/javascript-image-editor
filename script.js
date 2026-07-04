@@ -4,11 +4,39 @@ const placeholder = document.getElementById("placeholder");
 const filters = document.querySelector("#filters");
 const presetsFilters = document.querySelector(".heroRightBottom");
 const presetsBtns = document.querySelectorAll(".presetsBtn");
+
 const resetBtn = document.querySelector("#resetBtn");
 const downloadImgBtn = document.querySelector("#downloadImgBtn");
 
 const canvas = document.getElementById("img-canvas");
 const c = canvas.getContext("2d");
+
+
+const allRanges = document.querySelectorAll(".filter");
+
+function disableControls() {
+    allRanges.forEach((range) => {
+        range.disabled = true;
+    });
+
+    presetsBtns.forEach((btn) => {
+        btn.disabled = true;
+    });
+
+}
+
+disableControls();
+
+function enableControls() {
+    allRanges.forEach((range) => {
+        range.disabled = false;
+    });
+
+    presetsBtns.forEach((btn) => {
+        btn.disabled = false;
+    });
+}
+
 
 const filtersObj = {
     brightness: document.getElementById("Brightness"),
@@ -196,6 +224,8 @@ inputImg.addEventListener("change", (e) => {
         canvas.height = img.height;
 
         c.drawImage(img, 0, 0);
+
+        enableControls();
     };
     img.src = imageURL;
 });
@@ -228,6 +258,7 @@ function filtersApply() {
 }
 
 function presetsFiltersApply() {
+
     presetsFilters.addEventListener("click", (e) => {
         if (!e.target.classList.contains("btn")) {
             return;
@@ -256,15 +287,18 @@ function resetBtnFun() {
         applyFilters();
     });
 }
+function downloadImgFun(){
+    downloadImgBtn.addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.download = "edited-image.png";
+        link.href = canvas.toDataURL();
 
-downloadImgBtn.addEventListener("click", () => {
-    const link = document.createElement("a");
-    link.download = "edited-image.png";
-    link.href = canvas.toDataURL();
+        link.click();
+    });
 
-    link.click();
-});
+}
 
+downloadImgFun();
 resetBtnFun();
 
 filtersApply();
