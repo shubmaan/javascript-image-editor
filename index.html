@@ -21,11 +21,12 @@
                     <button class="btn" id="downloadImgBtn">Download Image</button>
                 </div>
                 <div class="heroLeftBottom">
-                    <div class="placeholder">
+                    <div id="placeholder">
                         <i class="fa-regular fa-images" id="icon"></i>
                         <p id="NoImgChooseText">No Image Choose</p>
                     </div>
-                
+                    
+                    <canvas id="img-canvas"></canvas>
                 </div>
             </div>
             <div class="heroRight">
@@ -39,20 +40,19 @@
                         <input type="range" id="Brightness" class="filter" value="100" min="0" max="200">
                         <p class="filterNameText" >Contrast</p>
                         <input type="range" id="Contrast" class="filter" value="100" min="0" max="200">
-                        <p class="filterNameText" >Exposure</p>
-                        <input type="range" id="Exposure" class="filter" value="100" min="0" max="200">
+
                         <p class="filterNameText" >Saturation</p>
-                        <input type="range" id="Saturation" class="filter" value="100" min="0" max="200">
+                        <input type="range" id="Saturate" class="filter" value="100" min="0" max="200">
                         <p class="filterNameText" >Hue Rotate</p>
-                        <input type="range" id="HueRotate" class="filter" value="0" min="0" max="200">
+                        <input type="range" id="HueRotate" class="filter" value="0" min="0" max="360">
                         <p class="filterNameText" >Blur</p>
-                        <input type="range" id="Blur" class="filter" value="0" min="0" max="200">
+                        <input type="range" id="Blur" class="filter" value="0" min="0" max="20">
                         <p class="filterNameText" >Grayscale</p>
                         <input type="range" id="Grayscale" class="filter" value="0" min="0" max="200">
                         <p class="filterNameText" >Sepia</p>
                         <input type="range" id="Sepia" class="filter" value="0" min="0" max="200">
                         <p class="filterNameText" >Opacity</p>
-                        <input type="range" id="Opacity" class="filter" value="200" min="0" max="200">
+                        <input type="range" id="Opacity" class="filter" value="100" min="0" max="100">
                         <p class="filterNameText" >Invert</p>
                         <input type="range" id="Invert" class="filter" value="0" min="0" max="200">
                     </div>
@@ -62,7 +62,7 @@
                     <button class="btn presetsBtn presetsBtn-active" id="Original">Original</button>
                     <button class="btn presetsBtn" id="Drama">Drama</button>
                     <button class="btn presetsBtn" id="Vintage">Vintage</button>
-                    <button class="btn presetsBtn" id="Oldschool">OldSchool</button>
+                    <button class="btn presetsBtn" id="OldSchool">Old School</button>
                     <button class="btn presetsBtn" id="Cyberpunk">Cyberpunk</button>
                     <button class="btn presetsBtn" id="SoftGlow">Soft Glow</button>
                     <button class="btn presetsBtn" id="Noir">Noir</button>
