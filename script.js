@@ -11,6 +11,7 @@ const downloadImgBtn = document.querySelector("#downloadImgBtn");
 const canvas = document.getElementById("img-canvas");
 const c = canvas.getContext("2d");
 
+let isImageLoaded = false;
 
 const allRanges = document.querySelectorAll(".filter");
 
@@ -217,6 +218,7 @@ inputImg.addEventListener("change", (e) => {
 
     const img = new Image();
     img.onload = () => {
+        isImageLoaded = true;
         uploadedImage = img;
         canvas.style.display = "flex";
         placeholder.style.display = "none";
@@ -231,7 +233,7 @@ inputImg.addEventListener("change", (e) => {
 });
 
 function applyFilters() {
-    if (!uploadedImage) return;
+    if (!isImageLoaded) return;
 
     c.filter = `
         brightness(${filtersObj.brightness.value}%)
@@ -288,12 +290,16 @@ function resetBtnFun() {
     });
 }
 function downloadImgFun(){
+    
     downloadImgBtn.addEventListener("click", () => {
-        const link = document.createElement("a");
-        link.download = "edited-image.png";
-        link.href = canvas.toDataURL();
+        if (isImageLoaded){
+            const link = document.createElement("a");
+            link.download = "edited-image.png";
+            link.href = canvas.toDataURL();
 
-        link.click();
+            link.click();
+        }
+        
     });
 
 }
