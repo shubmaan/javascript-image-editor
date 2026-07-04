@@ -1,130 +1,104 @@
+:root {
+    /* Background Colors */
+    --bg-primary-color: #0b0b0d;
 
-:root{
-     /* Background Colors */
-    --bg-primary-color:#0B0B0D ;
-    --bg-secondary-color: ;
-    --bg-tertiary-color: ;
-    --bg-surface-color: ;
-    --bg-card-color: ;
-    --bg-overlay-color: ;
-    --bg-hover-color: ;
-    --bg-active-color: ;
-    --bg-disabled-color: ;
-
-    --bg-color-canvas:#1E1E21;
-    --color-panel:#161618;
+    --bg-color-canvas: #1e1e21;
+    --color-panel: #161618;
 
     --color-chip-bg: #242428;
 
-
-    --color-chip-bg-hover: #2E2E33;
-    --color-chip-border-hover: #4A4A52;
+    --color-chip-bg-hover: #2e2e33;
+    --color-chip-border-hover: #4a4a52;
 
     /* btn */
-    --color-Choose-img-btn: #22C55E;
-    --color-Choose-img-btn-hover: #3ED374;
-    --color-reset-btn: #EF4444;
-    --color-reset-btn-hover: #F16565;
-    --color-Download-btn: #4C7EFF;
-    --color-Download-btn-hover: #6A93FF;
+    --color-Choose-img-btn: #22c55e;
+    --color-Choose-img-btn-hover: #3ed374;
+    --color-reset-btn: #ef4444;
+    --color-reset-btn-hover: #f16565;
+    --color-Download-btn: #4c7eff;
+    --color-Download-btn-hover: #6a93ff;
 
     /* border color */
-    --color-border:#2A2A2D;
-    --color-border-strong:#3A3A3F;
+    --color-border: #2a2a2d;
+    --color-border-strong: #3a3a3f;
 
-    --color-slider-thumb : #4C7EFF;
-    --color-slider-track: #2E2E32;
-
-
-
+    --color-slider-thumb: #4c7eff;
+    --color-slider-track: #2e2e32;
 
     /* Text Colors */
-    --text-primary-color: #F2F2F0;
-    --text-secondary-color:#9A9A9E ;
-    --text-tertiary-color: ;
-    --text-muted-color: ;
-    --text-disabled-color: ;
-    --text-inverse-color: ;
-    --text-link-color: ;
-    --text-success-color: ;
-    --text-warning-color: ;
-    --text-error-color: ;
-
-
-
+    --text-primary-color: #f2f2f0;
+    --text-secondary-color: #9a9a9e;
 
     /* Padding */
-    --padding-xs: 0.5rem;   /* 8px */
-    --padding-sm: 1rem;     /* 16px */
-    --padding-md: 1.5rem;   /* 24px */
-    --padding-lg: 2rem;     /* 32px */
-    --padding-xl: 3rem;     /* 48px */
-    --padding-2xl: 4rem;    /* 64px */
-    --padding-3xl: 5rem;    /* 80px */
-    --padding-4xl: 6rem;    /* 96px */
-    --padding-5xl: 7rem;    /* 112px */
-    --padding-6xl: 8rem;    /* 128px */
-    --padding-7xl: 9rem;    /* 144px */
-    --padding-8xl: 10rem;   /* 160px */
-
+    --padding-xs: 0.5rem; /* 8px */
+    --padding-sm: 1rem; /* 16px */
+    --padding-md: 1.5rem; /* 24px */
+    --padding-lg: 2rem; /* 32px */
+    --padding-xl: 3rem; /* 48px */
+    --padding-2xl: 4rem; /* 64px */
+    --padding-3xl: 5rem; /* 80px */
+    --padding-4xl: 6rem; /* 96px */
+    --padding-5xl: 7rem; /* 112px */
+    --padding-6xl: 8rem; /* 128px */
+    --padding-7xl: 9rem; /* 144px */
+    --padding-8xl: 10rem; /* 160px */
 
     /* Margin */
-    --margin-xs: 0.5rem;   /* 8px */
-    --margin-sm: 1rem;     /* 16px */
-    --margin-md: 1.5rem;   /* 24px */
-    --margin-lg: 2rem;     /* 32px */
-    --margin-xl: 3rem;     /* 48px */
-    --margin-2xl: 4rem;    /* 64px */
-    --margin-3xl: 5rem;    /* 80px */
-    --margin-4xl: 6rem;    /* 96px */
-    --margin-5xl: 7rem;    /* 112px */
-    --margin-6xl: 8rem;    /* 128px */
-    --margin-7xl: 9rem;    /* 144px */
-    --margin-8xl: 10rem;   /* 160px */
-
+    --margin-xs: 0.5rem; /* 8px */
+    --margin-sm: 1rem; /* 16px */
+    --margin-md: 1.5rem; /* 24px */
+    --margin-lg: 2rem; /* 32px */
+    --margin-xl: 3rem; /* 48px */
+    --margin-2xl: 4rem; /* 64px */
+    --margin-3xl: 5rem; /* 80px */
+    --margin-4xl: 6rem; /* 96px */
+    --margin-5xl: 7rem; /* 112px */
+    --margin-6xl: 8rem; /* 128px */
+    --margin-7xl: 9rem; /* 144px */
+    --margin-8xl: 10rem; /* 160px */
 
     /* Gutters */
-    --gutter-xxxs: 0.125rem;   /* 2px */
-    --gutter-xxs: 0.45rem;  
-    --gutter-xs: 0.5rem;   /* 8px */
-    --gutter-sm: 1rem;     /* 16px */
-    --gutter-md: 1.5rem;   /* 24px */
-    --gutter-lg: 2rem;     /* 32px */
-    --gutter-xl: 3rem;     /* 48px */
-    --gutter-2xl: 4rem;    /* 64px */
-    --gutter-3xl: 5rem;    /* 80px */
-    --gutter-4xl: 6rem;    /* 96px */
-    --gutter-5xl: 7rem;    /* 112px */
-    --gutter-6xl: 8rem;    /* 128px */
-    --gutter-7xl: 9rem;    /* 144px */
-    --gutter-8xl: 10rem;   /* 160px */
+    --gutter-xxxs: 0.125rem; /* 2px */
+    --gutter-xxs: 0.45rem;
+    --gutter-xs: 0.5rem; /* 8px */
+    --gutter-sm: 1rem; /* 16px */
+    --gutter-md: 1.5rem; /* 24px */
+    --gutter-lg: 2rem; /* 32px */
+    --gutter-xl: 3rem; /* 48px */
+    --gutter-2xl: 4rem; /* 64px */
+    --gutter-3xl: 5rem; /* 80px */
+    --gutter-4xl: 6rem; /* 96px */
+    --gutter-5xl: 7rem; /* 112px */
+    --gutter-6xl: 8rem; /* 128px */
+    --gutter-7xl: 9rem; /* 144px */
+    --gutter-8xl: 10rem; /* 160px */
 
     /* Font Sizes */
-    --font-size-xs: 0.75rem;    /* 12px */
-    --font-size-sm: 0.875rem;   /* 14px */
-    --font-size-md: 1rem;       /* 16px */
-    --font-size-lg: 1.125rem;   /* 18px */
-    --font-size-xl: 1.25rem;    /* 20px */
-    --font-size-2xl: 1.5rem;    /* 24px */
-    --font-size-3xl: 2rem;      /* 32px */
-    --font-size-4xl: 2.5rem;    /* 40px */
-    --font-size-5xl: 3rem;      /* 48px */
-    --font-size-6xl: 3.75rem;   /* 60px */
-    --font-size-7xl: 4.5rem;    /* 72px */
-    --font-size-8xl: 6rem;      /* 96px */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-md: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+    --font-size-3xl: 2rem; /* 32px */
+    --font-size-4xl: 2.5rem; /* 40px */
+    --font-size-5xl: 3rem; /* 48px */
+    --font-size-6xl: 3.75rem; /* 60px */
+    --font-size-7xl: 4.5rem; /* 72px */
+    --font-size-8xl: 6rem; /* 96px */
 
     /* Border Radius */
     --border-radius-none: 0;
-    --border-radius-xs: 0.125rem;   /* 2px */
-    --border-radius-sm: 0.25rem;    /* 4px */
-    --border-radius-md: 0.5rem;     /* 8px */
-    --border-radius-lg: 0.75rem;    /* 12px */
-    --border-radius-xl: 1rem;       /* 16px */
-    --border-radius-2xl: 1.5rem;    /* 24px */
-    --border-radius-3xl: 2rem;      /* 32px */
-    --border-radius-4xl: 2.5rem;    /* 40px */
-    --border-radius-5xl: 3rem;      /* 48px */
-    --border-radius-6xl: 3.75rem;   /* 60px */
-    --border-radius-7xl: 3rem;      /* 72px */
+    --border-radius-xs: 0.125rem; /* 2px */
+    --border-radius-sm: 0.25rem; /* 4px */
+    --border-radius-md: 0.5rem; /* 8px */
+    --border-radius-lg: 0.75rem; /* 12px */
+    --border-radius-xl: 1rem; /* 16px */
+    --border-radius-2xl: 1.5rem; /* 24px */
+    --border-radius-3xl: 2rem; /* 32px */
+    --border-radius-4xl: 2.5rem; /* 40px */
+    --border-radius-5xl: 3rem; /* 48px */
+    --border-radius-6xl: 3.75rem; /* 60px */
+    --border-radius-7xl: 3rem; /* 72px */
     --border-radius-full: 9999px;
 }

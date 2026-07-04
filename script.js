@@ -219,13 +219,10 @@ function applyFilters() {
     c.drawImage(uploadedImage, 0, 0);
 }
 
-
-
-
 function filtersApply() {
     filters.addEventListener("input", () => {
         setFocusToOrgFilter();
-    
+
         applyFilters();
     });
 }
@@ -260,11 +257,10 @@ function resetBtnFun() {
     });
 }
 
-
 downloadImgBtn.addEventListener("click", () => {
     const link = document.createElement("a");
-    link.download = "edited-image.png"; 
-    link.href = canvas.toDataURL(); ;
+    link.download = "edited-image.png";
+    link.href = canvas.toDataURL();
 
     link.click();
 });
