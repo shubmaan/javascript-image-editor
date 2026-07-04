@@ -1,5 +1,4 @@
-# Image Editor
-
+# JavaScript Image Editor
 A browser-based image editor built with HTML, CSS, and JavaScript. The application allows users to upload an image, apply real-time filter adjustments, use preset effects, reset edits, and download the edited image directly from the browser.
 
 ## Features
